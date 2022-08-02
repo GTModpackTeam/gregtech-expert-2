@@ -1677,16 +1677,24 @@ alloy_smelter.recipeBuilder()
 
 # Vibrant Quartz Glass
 recipes.remove(<appliedenergistics2:quartz_vibrant_glass>);
-recipes.addShaped(<appliedenergistics2:quartz_vibrant_glass>, [
-    [<minecraft:glowstone_dust>, <metaitem:plateGlowstone>, <minecraft:glowstone_dust>],
-    [<metaitem:plateGlowstone>, <appliedenergistics2:quartz_glass>, <metaitem:plateGlowstone>],
-    [<minecraft:glowstone_dust>, <metaitem:plateGlowstone>, <minecraft:glowstone_dust>]
-]);
-recipes.addShaped(<appliedenergistics2:quartz_vibrant_glass>, [
-    [<metaitem:stickAluminium>, <metaitem:dustAluminium>, <metaitem:stickAluminium>],
-    [<metaitem:dustAluminium>, <minecraft:glowstone>, <metaitem:dustAluminium>],
-    [<metaitem:stickAluminium>, <metaitem:dustAluminium>, <metaitem:stickAluminium>]
-]);
+alloy_smelter.recipeBuilder()
+    .inputs([
+        <appliedenergistics2:quartz_glass>,
+        <minecraft:glowstone_dust> * 8
+    ])
+    .outputs([<appliedenergistics2:quartz_vibrant_glass>])
+    .duration(20)
+    .EUt(480)
+    .buildAndRegister();
+alloy_smelter.recipeBuilder()
+    .inputs([
+        <minecraft:glowstone>,
+        <metaitem:dustAluminium> * 8
+    ])
+    .outputs([<appliedenergistics2:quartz_vibrant_glass>])
+    .duration(20)
+    .EUt(480)
+    .buildAndRegister();
 
 # Quartz Fixture
 recipes.remove(<appliedenergistics2:quartz_fixture>);
