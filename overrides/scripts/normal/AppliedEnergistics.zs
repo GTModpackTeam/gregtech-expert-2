@@ -269,12 +269,12 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 # Matrix Core
-recipes.addShaped(<contenttweaker:matrixcore>, [
+recipes.addShaped(<metaitem:matrix_core>, [
     [<metaitem:stickAluminium>, <appliedenergistics2:material:44>, <metaitem:stickAluminium>],
     [<appliedenergistics2:material:43>, <ore:crystalFluix>, <appliedenergistics2:material:43>],
     [<metaitem:stickAluminium>, <appliedenergistics2:material:44>, <metaitem:stickAluminium>]
 ]);
-recipes.addShaped(<contenttweaker:matrixcore> * 2, [
+recipes.addShaped(<metaitem:matrix_core> * 2, [
     [<metaitem:stickAluminium>, <appliedenergistics2:material:44>, <metaitem:stickAluminium>],
     [<appliedenergistics2:material:43>, <ore:crystalPureFluix>, <appliedenergistics2:material:43>],
     [<metaitem:stickAluminium>, <appliedenergistics2:material:44>, <metaitem:stickAluminium>]
@@ -288,7 +288,7 @@ assembler.recipeBuilder()
         <ore:crystalFluix> | <ore:crystalPureFluix>
     ])
     .fluidInputs([<liquid:plastic> * 144])
-    .outputs([<contenttweaker:matrixcore> * 4])
+    .outputs([<metaitem:matrix_core> * 4])
     .duration(20)
     .EUt(7680)
     .buildAndRegister();
@@ -302,7 +302,7 @@ assembler.recipeBuilder()
         <ore:crystalFluix> | <ore:crystalPureFluix>
     ])
     .fluidInputs([<liquid:plastic> * 144])
-    .outputs([<contenttweaker:matrixcore> * 4])
+    .outputs([<metaitem:matrix_core> * 4])
     .duration(100)
     .EUt(7680)
     .buildAndRegister();
@@ -913,7 +913,7 @@ JEI.removeAndHide(<appliedenergistics2:color_applicator>);
 recipes.remove(<appliedenergistics2:wireless_terminal>);
 recipes.addShaped(<appliedenergistics2:wireless_terminal>, [
     [<appliedenergistics2:material:41>, <appliedenergistics2:part:380>, <appliedenergistics2:material:41>],
-    [<appliedenergistics2:material:24>, <contenttweaker:matrixcore>, <appliedenergistics2:material:24>],
+    [<appliedenergistics2:material:24>, <metaitem:matrix_core>, <appliedenergistics2:material:24>],
     [<metaitem:plateNetherQuartz>, <appliedenergistics2:dense_energy_cell>, <metaitem:plateNetherQuartz>]
 ]);
 
@@ -1709,7 +1709,7 @@ recipes.addShaped(<appliedenergistics2:security_station>, [
 recipes.remove(<appliedenergistics2:quantum_ring>);
 recipes.addShaped(<appliedenergistics2:quantum_ring>, [
     [<metaitem:plateTitanium>, <appliedenergistics2:material:22>, <metaitem:plateTitanium>],
-    [<contenttweaker:matrixcore>, <appliedenergistics2:dense_energy_cell>, <ore:ae2.cable.glass>],
+    [<metaitem:matrix_core>, <appliedenergistics2:dense_energy_cell>, <ore:ae2.cable.glass>],
     [<metaitem:plateTitanium>, <appliedenergistics2:material:22>, <metaitem:plateTitanium>]
 ]);
 
@@ -1742,7 +1742,7 @@ recipes.remove(<appliedenergistics2:spatial_io_port>);
 recipes.addShaped(<appliedenergistics2:io_port>, [
     [<metaitem:plateGlass>, <metaitem:plateGlass>, <metaitem:plateGlass>],
     [<ore:ae2.cable.glass>, <appliedenergistics2:drive>, <ore:ae2.cable.glass>],
-    [<metaitem:plateSteel>, <contenttweaker:matrixcore>, <metaitem:plateSteel>]
+    [<metaitem:plateSteel>, <metaitem:matrix_core>, <metaitem:plateSteel>]
 ]);
 
 # ME Chest
@@ -1756,7 +1756,7 @@ recipes.addShaped(<appliedenergistics2:chest>, [
 # ME Drive
 recipes.remove(<appliedenergistics2:drive>);
 recipes.addShaped(<appliedenergistics2:drive>, [
-    [<metaitem:plateTitanium>, <contenttweaker:matrixcore>, <metaitem:plateTitanium>],
+    [<metaitem:plateTitanium>, <metaitem:matrix_core>, <metaitem:plateTitanium>],
     [<ore:ae2.cable.glass>, <appliedenergistics2:chest>, <ore:ae2.cable.glass>],
     [<metaitem:plateTitanium>, <ore:circuitHv>, <metaitem:plateTitanium>]
 ]);
@@ -1765,14 +1765,14 @@ recipes.addShaped(<appliedenergistics2:drive>, [
 recipes.removeByRecipeName("appliedenergistics2:network/blocks/interfaces_interface");
 recipes.addShaped(<appliedenergistics2:interface>, [
     [<metaitem:plateSteel>, <metaitem:plateGlass>, <metaitem:plateSteel>],
-    [<contenttweaker:matrixcore>, <gregtech:machine_casing:3>, <contenttweaker:matrixcore>],
+    [<metaitem:matrix_core>, <gregtech:machine_casing:3>, <metaitem:matrix_core>],
     [<metaitem:plateSteel>, <metaitem:plateGlass>, <metaitem:plateSteel>]
 ]);
 assembler.recipeBuilder()
     .circuit(1)
     .inputs([
         <gregtech:machine_casing:3>,
-        <contenttweaker:matrixcore>,
+        <metaitem:matrix_core>,
         <metaitem:plateGlass>,
         <metaitem:plateSteel> * 2
     ])
@@ -1786,7 +1786,7 @@ assembler.recipeBuilder()
 recipes.remove(<appliedenergistics2:fluid_interface>);
 recipes.addShaped(<appliedenergistics2:fluid_interface>, [
     [<metaitem:plateStainlessSteel>, <metaitem:plateGlass>, <metaitem:plateStainlessSteel>],
-    [<contenttweaker:matrixcore>, <gregtech:machine_casing:3>, <contenttweaker:matrixcore>],
+    [<metaitem:matrix_core>, <gregtech:machine_casing:3>, <metaitem:matrix_core>],
     [<metaitem:plateStainlessSteel>, <metaitem:plateGlass>, <metaitem:plateStainlessSteel>]
 ]);
 recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
@@ -1794,7 +1794,7 @@ assembler.recipeBuilder()
     .circuit(2)
     .inputs([
         <gregtech:machine_casing:3>,
-        <contenttweaker:matrixcore>,
+        <metaitem:matrix_core>,
         <metaitem:plateGlass>,
         <metaitem:plateStainlessSteel> * 2
     ])
@@ -1867,7 +1867,7 @@ assembler.recipeBuilder()
 recipes.remove(<appliedenergistics2:dense_energy_cell>);
 recipes.addShaped(<appliedenergistics2:dense_energy_cell>, [
     [<appliedenergistics2:energy_cell>, <ore:circuitEv>, <appliedenergistics2:energy_cell>],
-    [<ore:ae2.cable.dense.covered>, <contenttweaker:matrixcore>, <ore:ae2.cable.dense.covered>],
+    [<ore:ae2.cable.dense.covered>, <metaitem:matrix_core>, <ore:ae2.cable.dense.covered>],
     [<appliedenergistics2:energy_cell>, <metaitem:battery_buffer.ev.16>, <appliedenergistics2:energy_cell>]
 ]);
 assembler.recipeBuilder()
@@ -1875,7 +1875,7 @@ assembler.recipeBuilder()
     .inputs([
         <appliedenergistics2:energy_cell> * 2,
         <metaitem:battery_buffer.ev.16>,
-        <contenttweaker:matrixcore>,
+        <metaitem:matrix_core>,
         <ore:circuitEv>,
         <ore:ae2.cable.dense.covered>
     ])

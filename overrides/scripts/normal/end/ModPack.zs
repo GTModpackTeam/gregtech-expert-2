@@ -16,7 +16,7 @@ assembly_line.recipeBuilder()
     .inputs([<aeadditions:storage.component:6> * 4])
     .fluidInputs(<liquid:soldering_alloy> * 18432)
     .fluidInputs(<liquid:neutronium> * 51840)
-    .outputs([<contenttweaker:creativecomponent>])
+    .outputs([<metaitem:gte_me_fake_component>])
     .duration(1200)
     .EUt(491520)
     .buildAndRegister();

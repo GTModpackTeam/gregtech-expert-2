@@ -90,7 +90,7 @@ JEI.removeAndHide(<threng:machine:2>);
 recipes.remove(<threng:machine:3>);
 recipes.addShaped(<threng:machine:3>, [
     [<threng:material>, <ore:ae2.interface.item>, <threng:material>],
-    [<appliedenergistics2:crafting_accelerator>, <contenttweaker:matrixcore>, <appliedenergistics2:crafting_accelerator>],
+    [<appliedenergistics2:crafting_accelerator>, <metaitem:matrix_core>, <appliedenergistics2:crafting_accelerator>],
     [<threng:material>, <appliedenergistics2:material:24>, <threng:material>]
 ]);
 
@@ -98,7 +98,7 @@ recipes.addShaped(<threng:machine:3>, [
 recipes.remove(<threng:machine:4>);
 recipes.addShaped(<threng:machine:4>, [
     [<threng:material>, <appliedenergistics2:part:280>, <threng:material>],
-    [<appliedenergistics2:material:22>, <contenttweaker:matrixcore>, <appliedenergistics2:material:22>],
+    [<appliedenergistics2:material:22>, <metaitem:matrix_core>, <appliedenergistics2:material:22>],
     [<threng:material>, <appliedenergistics2:material:53>, <threng:material>]
 ]);
 
@@ -117,7 +117,7 @@ recipes.addShaped(<threng:big_assembler> * 4, [
 recipes.remove(<threng:big_assembler:2>);
 recipes.addShaped(<threng:big_assembler:2>, [
     [<threng:big_assembler>, <appliedenergistics2:molecular_assembler>, <threng:big_assembler>],
-    [<ore:ae2.cable.glass>, <contenttweaker:matrixcore>, <ore:ae2.cable.glass>],
+    [<ore:ae2.cable.glass>, <metaitem:matrix_core>, <ore:ae2.cable.glass>],
     [<threng:big_assembler>, <ore:ae2.interface.item>, <threng:big_assembler>]
 ]);
 
