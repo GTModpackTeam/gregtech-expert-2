@@ -86,7 +86,7 @@ assembler.recipeBuilder()
         <ore:flask> * 2,
         <ore:circuitHv> * 2,
         <metaitem:plateTitanium> * 4,
-        <extracells:fluidcrafter>
+        <aeadditions:fluidcrafter>
     ])
     .fluidInputs([<liquid:plastic> * 144])
     .outputs([<volumetricflask:filler>])

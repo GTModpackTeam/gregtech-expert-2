@@ -384,9 +384,9 @@ recipes.addShaped(<enderio:item_end_steel_boots>, [
 
 # Ender Shield
 recipes.addShaped(<enderio:item_end_steel_shield>, [
-    [<metaitem:plateEndSteel>, <metaitem:screwEndSteel>, <metaitem:plateEndSteel>],
-    [<ore:gtce.tool.hard.hammers>, <metaitem:ringEndSteel>, <ore:gtce.tool.files>],
-    [<metaitem:stickEndSteel>, <ore:gtce.tool.screwdrivers>, <metaitem:stickEndSteel>]
+    [<metaitem:boltEndSteel>, <metaitem:stickEndSteel>, <metaitem:boltEndSteel>],
+    [<metaitem:stickLongEndSteel>, <metaitem:plateEndSteel>, <metaitem:stickLongEndSteel>],
+    [<metaitem:boltEndSteel>, <metaitem:stickEndSteel>, <metaitem:boltEndSteel>]
 ]);
 
 # Staff of Levity

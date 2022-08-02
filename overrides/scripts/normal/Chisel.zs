@@ -15,7 +15,7 @@ Carving.addVariation("basalt", <gregtech:stone_smooth:3>);
 recipes.remove(<chisel:chisel_iron>);
 recipes.addShaped(<chisel:chisel_iron>, [
     [<ore:gtce.tool.files>, <metaitem:plateIron>, <metaitem:plateIron>],
-    [null, <metaitem:screwSteel>, <metaitem:plateIron>],
+    [null, <metaitem:screwIron>, <metaitem:plateIron>],
     [<metaitem:stickBronze>, null, <ore:gtce.tool.hard.hammers>]
 ]);
 
@@ -45,7 +45,7 @@ recipes.remove(<chisel:auto_chisel>);
 recipes.addShaped(<chisel:auto_chisel>, [
     [<metaitem:plateGlass>, <metaitem:plateGlass>, <metaitem:plateGlass>],
     [<metaitem:plateGlass>, <chisel:chisel_iron> | <chisel:chisel_diamond> | <chisel:chisel_hitech>, <metaitem:plateGlass>],
-    [<metaitem:plateIron>, <ore:compressed1xDustBedrock>, <metaitem:plateIron>]
+    [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>]
 ]);
 
 # Bookshelfs

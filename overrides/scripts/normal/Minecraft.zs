@@ -47,8 +47,14 @@ extractor.recipeBuilder()
 # Iron Nugget
 recipes.addShapeless(<minecraft:iron_nugget> * 9, [<minecraft:iron_ingot>]);
 
+# Iron Ingot
+furnace.remove(<minecraft:iron_ingot>, <appliedenergistics2:material:49>);
+
 # Gold Nugget
 recipes.addShapeless(<minecraft:gold_nugget> * 9, [<minecraft:gold_ingot>]);
+
+# Gold Ingot
+furnace.remove(<minecraft:gold_ingot>, <appliedenergistics2:material:51>);
 
 # Fermented Spider Eye
 recipes.remove(<minecraft:fermented_spider_eye>);
@@ -96,18 +102,6 @@ recipes.remove(<minecraft:end_rod>);
 # Daylight Sensor
 recipes.removeByRecipeName("appliedenergistics2:misc/vanilla_daylight_detector");
 
-# Beacon
-assembler.recipeBuilder()
-    .inputs([
-        <minecraft:obsidian> * 3,
-        <minecraft:nether_star>
-    ])
-    .fluidInputs([<liquid:glass> * 720])
-    .outputs([<minecraft:beacon>])
-    .duration(100)
-    .EUt(16)
-    .buildAndRegister();
-
 # Redstone Lamp (Override)
 assembler.findRecipe(1, [
     <minecraft:redstone:0> * 4, <minecraft:glowstone_dust:0> * 4
@@ -123,10 +117,17 @@ assembler.recipeBuilder()
     .EUt(1)
     .buildAndRegister();
 
-# Enchantment Table
-recipes.remove(<minecraft:enchanting_table>);
-recipes.addShaped(<minecraft:enchanting_table>, [
-    [<minecraft:diamond>, <minecraft:carpet:14>, <minecraft:diamond>],
-    [<metaitem:plateObsidian>, <ore:bookshelf>, <metaitem:plateObsidian>],
-    [<minecraft:diamond>, <metaitem:plateObsidian>, <minecraft:diamond>]
-]);
+# Redstone Torch (Override)
+assembler.findRecipe(1, [
+    <minecraft:redstone>, <minecraft:stick>
+], null).remove();
+assembler.recipeBuilder()
+    .circuit(5)
+    .inputs([
+        <minecraft:redstone>,
+        <minecraft:stick>
+    ])
+    .outputs([<minecraft:redstone_torch>])
+    .duration(20)
+    .EUt(1)
+    .buildAndRegister();

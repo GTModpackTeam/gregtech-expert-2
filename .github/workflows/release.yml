@@ -1,4 +1,4 @@
-name: Deploy Modpack
+name: Deploy modpack
 on:
   push:
     tags:
@@ -21,9 +21,10 @@ jobs:
 
       - name: Set the version
         run: |-
-          MODPACKVERSION=${{ steps.get_version.outputs.VERSION }}
+          MODPACKVERSION=v${{ steps.get_version.outputs.VERSION }}
+          echo "GregTech Expert 2 ${MODPACKVERSION} ${{ steps.get_version.outputs.LEVEL }}" > ./overrides/resources/custommainmenu/version.txt
           sed -i -e "s/MODPACKVERSION/${MODPACKVERSION}/g" manifest.json
-      
+
       - name: Archive Release Client
         uses: thedoctor0/zip-release@master
         with:

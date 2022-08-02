@@ -789,17 +789,43 @@ macerator.recipeBuilder()
     .EUt(480)
     .buildAndRegister();
 
+# Grains of Infinity
+macerator.recipeBuilder()
+    .inputs([<enderio:block_infinity>])
+    .outputs([<enderio:item_material:20> * 4])
+    .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+macerator.recipeBuilder()
+    .inputs([<enderio:block_infinity:1>])
+    .outputs([<enderio:item_material:20> * 16])
+    .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+macerator.recipeBuilder()
+    .inputs([<enderio:block_infinity:2>])
+    .outputs([<enderio:item_material:20> * 64])
+    .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+
 # Infinity Dust Block
 compressor.recipeBuilder()
-    .inputs([<enderio:item_material:20> * 9])
+    .inputs([<enderio:item_material:20> * 4])
     .outputs([<enderio:block_infinity>])
     .duration(500)
+    .EUt(480)
+    .buildAndRegister();
+rock_breaker.recipeBuilder()
+    .notConsumable([<enderio:block_infinity>])
+    .outputs([<enderio:block_infinity>])
+    .duration(100)
     .EUt(480)
     .buildAndRegister();
 
 # Compressed Infinity Dust Block
 compressor.recipeBuilder()
-    .inputs([<enderio:block_infinity> * 9])
+    .inputs([<enderio:block_infinity> * 4])
     .outputs([<enderio:block_infinity:1>])
     .duration(500)
     .EUt(480)
@@ -807,7 +833,7 @@ compressor.recipeBuilder()
 
 # Double Compressed Infinity Dust Block
 compressor.recipeBuilder()
-    .inputs([<enderio:block_infinity:1> * 9])
+    .inputs([<enderio:block_infinity:1> * 4])
     .outputs([<enderio:block_infinity:2>])
     .duration(500)
     .EUt(480)

@@ -1,29 +1,35 @@
 {
   "images": {
-    "title": {
-      "image" : "custommainmenu:textures/gui/minecraft.png",
-      "posX" : -137,
-      "posY" : 30,
-      "width" : 512,
-      "height" : 512,
-      "alignment" : "top_center"
+    "black": {
+      "image": "custommainmenu:textures/bg_menu.png",
+      "posX": -43,
+      "posY": 0,
+      "width": 148,
+      "height": 4096,
+      "alignment": "column_top"
     },
-    "edition": {
-      "image" : "custommainmenu:textures/gui/edition.png",
-      "posX" : -49,
-      "posY" : 67,
-      "width" : 128,
-      "height" : 16,
-      "alignment" : "top_center"
+    "logo": {
+      "image": "mainmenu:textures/logo1.png",
+      "posX": 118,
+      "posY": 10,
+      "width": 280,
+      "height": 60,
+      "alignment": "column_top"
     }
   },
   "buttons": {
     "singleplayer": {
       "text": "menu.singleplayer",
-      "posX": -120,
-      "posY": 48,
-      "width": 120,
+      "texture": "custommainmenu:textures/btn.png",
+      "normalTextColor": 4227327,
+      "hoverTextColor": 65535,
+      "posX": -44,
+      "posY": -140,
+      "width": 150,
       "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
       "action": {
         "type": "openGui",
         "gui": "singleplayer"
@@ -31,88 +37,102 @@
     },
     "multiplayer": {
       "text": "menu.multiplayer",
-      "posX": 0,
-      "posY": 48,
-      "width": 120,
+      "texture": "custommainmenu:textures/btn.png",
+      "normalTextColor": 4227327,
+      "hoverTextColor": 65535,
+      "posX": -44,
+      "posY": -120,
+      "width": 150,
       "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
       "action": {
         "type": "openGui",
         "gui": "multiplayer"
       }
     },
-    "mods": {
-      "text": "fml.menu.mods",
-      "posX": -120,
-      "posY": 68,
-      "width": 120,
-      "height": 20,
-      "action": {
-        "type": "openGui",
-        "gui": "mods"
-      }
-    },
-    "options": {
-      "text": "menu.options",
-      "posX": 0,
-      "posY": 68,
-      "width": 120,
-      "height": 20,
-      "action": {
-        "type": "openGui",
-        "gui": "options"
-      }
-    },
     "discord": {
-      "text": "Join Us On Discord!",
-      "posX": -120,
-      "posY": 88,
-      "width": 120,
+      "text": "menu.join.discord",
+      "normalTextColor": 250080,
+      "hoverTextColor": 16758315,
+      "texture": "custommainmenu:textures/btn.png",
+      "posX": -44,
+      "posY": -90,
+      "width": 150,
       "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
       "action": {
         "type": "openLink",
         "link": "https://discord.gg/xBwHpZyZdW"
       }
     },
-    "update": {
-      "text": "Update Notes",
-      "posX": 0,
-      "posY": 88,
-      "width": 120,
+    "language": {
+      "text": "menu.language",
+      "normalTextColor": 120120,
+      "hoverTextColor": 4229927,
+      "texture": "custommainmenu:textures/btn.png",
+      "posX": -44,
+      "posY": -70,
+      "width": 150,
       "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
       "action": {
-        "type": "openLink",
-        "link": "https://github.com/GTModpackTeam/gregtech-expert-2/blob/main/CHANGELOG.md"
+        "type": "openGui",
+        "gui": "languages"
       }
     },
-    "refresh": {
-      "text" : "",
-      "posX" : -154,
-      "posY" : 132,
-      "width" : 20,
-      "height" : 20,
-      "texture" : "custommainmenu:textures/gui/buttons.png",
-      "action" : {
-        "type" : "refresh"
+    "options": {
+      "text": "menu.options",
+      "normalTextColor": 120120,
+      "hoverTextColor": 4229927,
+      "texture": "custommainmenu:textures/btn.png",
+      "posX": -44,
+      "posY": -50,
+      "width": 150,
+      "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
+      "action": {
+        "type": "openGui",
+        "gui": "options"
       }
     },
-    "language":
-    {
-      "text" : "",
-      "posX" : 135,
-      "posY" : 132,
-      "width" : 20,
-      "height" : 20,
-      "action" : {
-          "type" : "openGui",
-          "gui" : "languages"
+    "mods": {
+      "text": "Mods (#modsloaded#/#modsactive#)",
+      "normalTextColor": 120120,
+      "hoverTextColor": 4229927,
+      "texture": "custommainmenu:textures/btn.png",
+      "posX": -44,
+      "posY": -30,
+      "width": 150,
+      "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
+      "action": {
+        "type": "openGui",
+        "gui": "mods"
       }
     },
     "quit": {
       "text": "menu.quit",
-      "posX": -120,
-      "posY": 132,
-      "width": 240,
+      "hoverText": "menu.quit.warning",
+      "normalTextColor": 12012000,
+      "hoverTextColor": 16711680,
+      "texture": "custommainmenu:textures/btn.png",
+      "posX": -44,
+      "posY": -10,
+      "width": 150,
       "height": 20,
+      "imageWidth": 1000,
+      "imageHeight": 1,
+      "alignment": "column_bottom",
       "action": {
         "type": "quit"
       }
@@ -121,33 +141,49 @@
   "labels": {
     "mojang": {
       "text": "Copyright Mojang AB. Do not distribute!",
-      "posX": -197,
-      "posY": -10,
-      "color": -1,
-      "alignment": "bottom_right"
+      "posX": 118,
+      "posY": 0,
+      "alignment": "column_bottom"
     },
-    "fml": {
-      "text" : "",
-      "posX" : 2,
-      "posY" : -46,
-      "color" : -1,
-      "alignment" : "bottom_left"
+    "version": {
+      "text": "file:custommainmenu:version.txt",
+      "posX": 118,
+      "posY": -10,
+      "alignment": "column_bottom",
+      "action": {
+        "type": "openLink",
+        "link": "https://github.com/GTModpackTeam/gregtech-expert-2/blob/main/CHANGELOG.md"
+      }
+    }
+  },
+  "alignments": {
+    "column_top": {
+      "factorWidth": 0.1,
+      "factorHeight": 0.0
+    },
+    "column_logo": {
+      "factorWidth": 0.1,
+      "factorHeight": 0.05
+    },
+    "column_center": {
+      "factorWidth": 0.1,
+      "factorHeight": 0.5
+    },
+    "column_bottom": {
+      "factorWidth": 0.1,
+      "factorHeight": 0.95
     }
   },
   "other": {
-    "splash-text": {
-      "posX" : 90,
-      "posY" : 70,
-      "color" : -256,
-      "alignment" : "top_center",
-      "texts" : "file:minecraft:texts/splashes.txt"
-    },
-    "panorama": {
-      "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
-      "animate" : true,
-      "animationSpeed" : 1,
-      "blur" : true,
-      "gradient" : true
+    "background": {
+      "image": "",
+      "slideshow": {
+        "images": [
+          "custommainmenu:textures/bg1.png"
+        ],
+        "displayDuration": 150,
+        "fadeDuration": 40
+      }
     }
   }
 }

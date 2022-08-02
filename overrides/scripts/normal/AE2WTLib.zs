@@ -22,7 +22,6 @@ recipes.addShaped(<wft:wft>, [
     [<metaitem:sensor.iv>, <appliedenergistics2:part:520>, <metaitem:sensor.iv>],
     [<metaitem:stickOsmiridium>, <metaitem:emitter.iv>, <metaitem:stickOsmiridium>]
 ]);
-recipes.addShapeless(<wft:wft>, [<extracells:terminal.fluid.wireless>]);
 
 # Wireless Interface Terminal
 recipes.remove(<wit:wit>);
@@ -39,9 +38,6 @@ recipes.addShaped(<wpt:wpt>, [
     [<metaitem:sensor.iv>, <appliedenergistics2:part:340>, <metaitem:sensor.iv>],
     [<metaitem:stickOsmiridium>, <metaitem:emitter.iv>, <metaitem:stickOsmiridium>]
 ]);
-
-# Wireless Universal Terminal
-recipes.addShapeless(<ae2wtlib:wut>, [<extracells:terminal.universal.wireless>]);
 
 # Infinity Booster Card
 recipes.remove(<ae2wtlib:infinity_booster_card>);

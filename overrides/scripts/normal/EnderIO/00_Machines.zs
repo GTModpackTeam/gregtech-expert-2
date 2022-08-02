@@ -5,10 +5,6 @@ import mods.zenutils.I18n;
 
 
 
-# Capacitor Banks
-<enderio:block_cap_bank:*>.addTooltip(format.red(I18n.format("modpack.enderio.capacitor_bank.tooltip.1")));
-JEI.addDescription(<enderio:block_cap_bank:*>, I18n.format("modpack.enderio.capacitor_bank.tooltip.1"));
-
 # Basic Capacitor Bank
 recipes.remove(<enderio:block_cap_bank:1>);
 recipes.addShaped(<enderio:block_cap_bank:1>, [
@@ -16,6 +12,19 @@ recipes.addShaped(<enderio:block_cap_bank:1>, [
     [<metaitem:plateElectricalSteel>, <ore:itemSimpleMachineChassi>, <metaitem:plateElectricalSteel>],
     [<enderio:item_basic_capacitor>, <ore:batteryHv>, <enderio:item_basic_capacitor>]
 ]);
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs([
+        <enderio:item_basic_capacitor> * 2,
+        <metaitem:plateElectricalSteel>,
+        <ore:circuitHv>,
+        <ore:itemSimpleMachineChassi>
+    ])
+    .fluidInputs([<liquid:plastic> * 144])
+    .outputs([<enderio:block_cap_bank:1>])
+    .duration(20)
+    .EUt(7680)
+    .buildAndRegister();
 
 # Capacitor Bank
 recipes.remove(<enderio:block_cap_bank:2>);
@@ -24,6 +33,21 @@ recipes.addShaped(<enderio:block_cap_bank:2>, [
     [<metaitem:plateEnergeticAlloy>, <ore:itemMachineChassi>, <metaitem:plateEnergeticAlloy>],
     [<enderio:block_cap_bank:1>, <ore:batteryEv>, <enderio:block_cap_bank:1>]
 ]);
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs([
+        <enderio:block_cap_bank:1> * 2,
+        <metaitem:plateEnergeticAlloy>,
+        <enderio:item_basic_capacitor:1>,
+        <ore:circuitEv>,
+        <ore:batteryEv>,
+        <ore:itemMachineChassi>
+    ])
+    .fluidInputs([<liquid:plastic> * 144])
+    .outputs([<enderio:block_cap_bank:2>])
+    .duration(20)
+    .EUt(7680)
+    .buildAndRegister();
 
 # Vibrant Capacitor Bank
 recipes.remove(<enderio:block_cap_bank:3>);
@@ -32,6 +56,21 @@ recipes.addShaped(<enderio:block_cap_bank:3>, [
     [<ore:itemVibrantCrystal>, <ore:itemEnhancedMachineChassi>, <ore:itemVibrantCrystal>],
     [<enderio:block_cap_bank:2>, <ore:batteryIv>, <enderio:block_cap_bank:2>]
 ]);
+assembler.recipeBuilder()
+    .circuit(1)
+    .inputs([
+        <enderio:block_cap_bank:2> * 2,
+        <ore:itemVibrantCrystal>,
+        <enderio:item_basic_capacitor:2>,
+        <ore:circuitIv>,
+        <ore:batteryIv>,
+        <ore:itemEnhancedMachineChassi>
+    ])
+    .fluidInputs([<liquid:plastic> * 144])
+    .outputs([<enderio:block_cap_bank:3>])
+    .duration(20)
+    .EUt(7680)
+    .buildAndRegister();
 
 # Block Detector
 JEI.hide(<enderio:block_detector_block>);
